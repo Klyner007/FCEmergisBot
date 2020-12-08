@@ -18,7 +18,7 @@ module.exports = class Actions {
     this.fileHandler.writeEmergisFile(
       "assets/" + itemName + ".json",
       itemName,
-      itemToAdd.split(',').join(' '),
+      itemToAdd.split(",").join(" "),
       callback
     );
   }
@@ -56,6 +56,9 @@ module.exports = class Actions {
   }
 
   getRandomItemFromArray(array) {
+    if (array.length === 0) {
+      return "Sorry, there is nothing in here";
+    }
     return array[Math.floor(Math.random() * array.length)];
   }
 };

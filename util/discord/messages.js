@@ -28,6 +28,10 @@ module.exports = class Messages {
             name: "fact",
             value: "Just a fun fact. 🤓",
           },
+          {
+            name: "random",
+            value: "Random text. I don't know what you put in there...",
+          },
         ],
         timestamp: new Date(),
         footer: {
