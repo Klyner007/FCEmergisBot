@@ -18,7 +18,7 @@ module.exports = class Actions {
     this.fileHandler.writeEmergisFile(
       "assets/" + itemName + ".json",
       itemName,
-      itemToAdd.replaceAll(',', ' '),
+      itemToAdd.split(',').join(' '),
       callback
     );
   }
