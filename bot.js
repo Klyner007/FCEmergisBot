@@ -8,7 +8,6 @@ const client = new Discord.Client({
 var messageHandler = new MessageHandler();
 
 client.on("messageDelete", (msg) => {
-  msg.reply("Stop deleting messages!");
 });
 
 client.on("ready", () => {

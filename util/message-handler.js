@@ -19,6 +19,8 @@ module.exports = class MessageHandler {
       return;
     }
 
+    msg.delete();
+
     const remainingMessage = content.substr(1, content.length);
     const args = remainingMessage.split(" ");
     switch (args.shift()) {
